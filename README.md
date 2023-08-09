@@ -1,28 +1,42 @@
-# Project Name
+# CWL-Airflow Using Docker Compose
 
-Brief description of your project.
-
+Use this Docker Compose file to run Airflow 2.1.4 with CWL-Airflow 1.2.0 installed. The compose file will start a webserver, scheduler, and worker and all other necessary parts.
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Configuration and Installation](#Configuration and Installation)
+- [Running first CWL code](#Running first CWL code)
+- [Features and Bugs](#Features and Bugs)
 
-## Introduction
+## Configuration and Installation
 
-Provide a brief introduction to your project. Explain what it does and its main purpose.
+First, make sure that each containers can access persistant data via volumes. These specify locations in your local filesystem, managed by Docker.
+  Navigate to the .env to specify the location of your storage folders
+  *Create them inside your project home
+  Compose has been configured properly to create the necessary voulumes
 
-## Features
+Note: Other changes can be made inside of the Dockerfile in the cwl_airflow folder (for instance, author names and description etc.)
 
-List the main features of your project.
+*** MAY NOT BE NECESSARY ***
 
-## Installation
 
-Provide instructions on how to install your project or set it up. Include any dependencies that need to be installed.
+If problems arise with missing folder errors, try the following...
 
-```bash
-# Example installation command
-npm install
+
+Make sure that the folder locations are specefied inside airflow.cfg.
+  Navigate to airflow.cfg and include/update the parameters, at the bottom of the document, which specify the folder locations. After updating the file, copy the file back into the webserver container where it is used to initialize airflow and its many parameters.
+
+
+
+
+Use the command
+
+$ docker compose up --build
+
+
+*Compose will create all volumes at run time if they do not already exist
+
+## Running first CWL code
+
+
+## Features and Bugs
+
