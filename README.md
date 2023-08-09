@@ -3,9 +3,9 @@
 Use this Docker Compose file to run Airflow 2.1.4 with CWL-Airflow 1.2.0 installed. The compose file will start a webserver, scheduler, and worker and all other necessary parts.
 ## Table of Contents
 
-- [Configuration and Installation](#Configuration and Installation)
-- [Running first CWL code](#Running first CWL code)
-- [Features and Bugs](#Features and Bugs)
+- [Configuration and Installation](#configuration-and-installation)
+- [Running first CWL code](#running-first-cwl-code)
+- [Features and Bugs](#features-and-bugs)
 
 ## Configuration and Installation
 
@@ -36,6 +36,19 @@ $ docker compose up --build
 *Compose will create all volumes at run time if they do not already exist
 
 ## Running first CWL code
+
+You will need two three things to run your first CWL script (more inputs and complexity in workflow many add more documents necessary)...
+1. input/job
+2. cwl workflow file
+3. python-DAG file
+
+Once uploaded successfully...
+When triggering your DAG, use a .json job file to specify inputs. Select "trigger w/ configuration" inside of the Airflow UI. Also look to the CWL-Airflow "how-to-use.md" to learn about API usage. CWL-Airflow supplies its own API to execute DAGs with PUSH and accompanying job configuration.
+
+For example, upperback is a simple workflow that takes a message, changes it to uppercase, reverses the text, and outputs the result (using inLineJaveRequrement, CommandLineTool, and ExpressionTool). It needs an input, specified upon running, like this:
+
+
+
 
 
 ## Features and Bugs
