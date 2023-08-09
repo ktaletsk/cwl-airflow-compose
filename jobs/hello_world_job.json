@@ -1,0 +1,7 @@
+{
+    "hello_world_file": {
+        "class": "File",
+        "location": "../cwl_inputs_folder/scatter_job.ymal"
+    },
+    "scale": 1
+}

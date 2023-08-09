@@ -1,0 +1,33 @@
+[2023-08-08 20:19:44,318] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: my_dag.echo 2023-08-08T20:19:38.560077+00:00 [queued]>
+[2023-08-08 20:19:44,333] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: my_dag.echo 2023-08-08T20:19:38.560077+00:00 [queued]>
+[2023-08-08 20:19:44,335] {taskinstance.py:1095} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-08 20:19:44,336] {taskinstance.py:1096} INFO - Starting attempt 1 of 1
+[2023-08-08 20:19:44,338] {taskinstance.py:1097} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-08 20:19:44,373] {taskinstance.py:1115} INFO - Executing <Task(CWLStepOperator): echo> on 2023-08-08T20:19:38.560077+00:00
+[2023-08-08 20:19:44,377] {standard_task_runner.py:52} INFO - Started process 307 to run task
+[2023-08-08 20:19:44,383] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'my_dag', 'echo', '2023-08-08T20:19:38.560077+00:00', '--job-id', '8', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/clean_dag_run.py', '--cfg-path', '/tmp/tmpwruzt6nf', '--error-file', '/tmp/tmp_5elr4di']
+[2023-08-08 20:19:44,385] {standard_task_runner.py:77} INFO - Job 8: Subtask echo
+[2023-08-08 20:19:44,482] {logging_mixin.py:109} INFO - Running <TaskInstance: my_dag.echo 2023-08-08T20:19:38.560077+00:00 [running]> on host 6bdaf17f77fb
+[2023-08-08 20:19:44,607] {taskinstance.py:1252} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=my_dag
+AIRFLOW_CTX_TASK_ID=echo
+AIRFLOW_CTX_EXECUTION_DATE=2023-08-08T20:19:38.560077+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-08-08T20:19:38.560077+00:00
+[2023-08-08 20:19:46,244] {taskinstance.py:1212} INFO - Marking task as SUCCESS. dag_id=my_dag, task_id=echo, execution_date=20230808T201938, start_date=20230808T201944, end_date=20230808T201946
+[2023-08-08 20:19:46,286] {local_task_job.py:151} INFO - Task exited with return code 0
+[2023-08-08 20:19:46,423] {report.py:61} INFO - CWL LOGS
+[2023-08-08 20:19:46,424] {report.py:62} INFO - *** Reading local file: /Users/john.mcauliffe/documents/project1/logs/my_dag/echo/2023-08-08T20:19:38.560077+00:00/1.log.cwl
+[2023-08-08 20:19:44,771] {load_tool.py:101} INFO - Resolved '/Users/john.mcauliffe/documents/project1/cwl_tmp_folder/my_dag_manual__2023-08-08T20_19_38.560077_00_00_yxszm_jt/echo/echo_step_workflow.cwl' to 'file:///Users/john.mcauliffe/documents/project1/cwl_tmp_folder/my_dag_manual__2023-08-08T20_19_38.560077_00_00_yxszm_jt/echo/echo_step_workflow.cwl'
+[2023-08-08 20:19:46,118] {workflow_job.py:787} INFO - [workflow ] start
+[2023-08-08 20:19:46,120] {workflow_job.py:626} INFO - [workflow ] starting step echo
+[2023-08-08 20:19:46,121] {workflow_job.py:74} INFO - [step echo] start
+[2023-08-08 20:19:46,139] {job.py:259} INFO - [job echo] /Users/john.mcauliffe/documents/project1/cwl_tmp_folder/my_dag_manual__2023-08-08T20_19_38.560077_00_00_yxszm_jt/echo/echo_step_cache/r5yrqaaq$ echo \
+    whats_up > /Users/john.mcauliffe/documents/project1/cwl_tmp_folder/my_dag_manual__2023-08-08T20_19_38.560077_00_00_yxszm_jt/echo/echo_step_cache/r5yrqaaq/output.txt
+[2023-08-08 20:19:46,167] {job.py:403} INFO - [job echo] completed success
+[2023-08-08 20:19:46,168] {workflow_job.py:587} INFO - [step echo] completed success
+[2023-08-08 20:19:46,170] {workflow_job.py:549} INFO - [workflow ] completed success
+
+[2023-08-08 20:19:46,451] {local_task_job.py:261} INFO - 1 downstream tasks scheduled from follow-on schedule check

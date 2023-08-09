@@ -1,0 +1,30 @@
+[2023-08-07 04:07:29,011] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: my_dag.uppercase 2023-08-07T04:07:19.354670+00:00 [queued]>
+[2023-08-07 04:07:29,047] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: my_dag.uppercase 2023-08-07T04:07:19.354670+00:00 [queued]>
+[2023-08-07 04:07:29,049] {taskinstance.py:1095} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-07 04:07:29,051] {taskinstance.py:1096} INFO - Starting attempt 1 of 1
+[2023-08-07 04:07:29,053] {taskinstance.py:1097} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-07 04:07:29,069] {taskinstance.py:1115} INFO - Executing <Task(CWLStepOperator): uppercase> on 2023-08-07T04:07:19.354670+00:00
+[2023-08-07 04:07:29,076] {standard_task_runner.py:52} INFO - Started process 2216 to run task
+[2023-08-07 04:07:29,082] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'my_dag', 'uppercase', '2023-08-07T04:07:19.354670+00:00', '--job-id', '4', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/clean_dag_run.py', '--cfg-path', '/tmp/tmpa6p096g4', '--error-file', '/tmp/tmpip9tn57x']
+[2023-08-07 04:07:29,085] {standard_task_runner.py:77} INFO - Job 4: Subtask uppercase
+[2023-08-07 04:07:29,215] {logging_mixin.py:109} INFO - Running <TaskInstance: my_dag.uppercase 2023-08-07T04:07:19.354670+00:00 [running]> on host 6bdaf17f77fb
+[2023-08-07 04:07:29,330] {taskinstance.py:1252} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=my_dag
+AIRFLOW_CTX_TASK_ID=uppercase
+AIRFLOW_CTX_EXECUTION_DATE=2023-08-07T04:07:19.354670+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-08-07T04:07:19.354670+00:00
+[2023-08-07 04:07:32,737] {taskinstance.py:1212} INFO - Marking task as SUCCESS. dag_id=my_dag, task_id=uppercase, execution_date=20230807T040719, start_date=20230807T040729, end_date=20230807T040732
+[2023-08-07 04:07:32,805] {local_task_job.py:151} INFO - Task exited with return code 0
+[2023-08-07 04:07:32,964] {report.py:61} INFO - CWL LOGS
+[2023-08-07 04:07:32,966] {report.py:62} INFO - *** Reading local file: /Users/john.mcauliffe/documents/project1/logs/my_dag/uppercase/2023-08-07T04:07:19.354670+00:00/1.log.cwl
+[2023-08-07 04:07:29,501] {load_tool.py:101} INFO - Resolved '/Users/john.mcauliffe/documents/project1/cwl_tmp_folder/my_dag_manual__2023-08-07T04_07_19.354670_00_00_kuvdvw_0/uppercase/uppercase_step_workflow.cwl' to 'file:///Users/john.mcauliffe/documents/project1/cwl_tmp_folder/my_dag_manual__2023-08-07T04_07_19.354670_00_00_kuvdvw_0/uppercase/uppercase_step_workflow.cwl'
+[2023-08-07 04:07:31,815] {workflow_job.py:787} INFO - [workflow ] start
+[2023-08-07 04:07:31,817] {workflow_job.py:626} INFO - [workflow ] starting step uppercase
+[2023-08-07 04:07:31,819] {workflow_job.py:74} INFO - [step uppercase] start
+[2023-08-07 04:07:32,673] {workflow_job.py:587} INFO - [step uppercase] completed success
+[2023-08-07 04:07:32,675] {workflow_job.py:549} INFO - [workflow ] completed success
+
+[2023-08-07 04:07:32,997] {local_task_job.py:261} INFO - 1 downstream tasks scheduled from follow-on schedule check

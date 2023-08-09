@@ -1,0 +1,316 @@
+[2023-08-06 23:37:20,307] {processor.py:162} INFO - Started process (PID=211) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:37:20,308] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:37:20,311] {logging_mixin.py:109} INFO - [2023-08-06 23:37:20,310] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:37:20,780] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:37:21,392] {logging_mixin.py:109} INFO - [2023-08-06 23:37:21,392] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:37:21,404] {logging_mixin.py:109} INFO - [2023-08-06 23:37:21,403] {dag.py:1853} INFO - Creating ORM DAG for clean_dag_run
+[2023-08-06 23:37:21,412] {logging_mixin.py:109} INFO - [2023-08-06 23:37:21,412] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:37:21,433] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 1.131 seconds
+[2023-08-06 23:37:51,517] {processor.py:162} INFO - Started process (PID=219) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:37:51,520] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:37:51,523] {logging_mixin.py:109} INFO - [2023-08-06 23:37:51,523] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:37:51,816] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:37:51,847] {logging_mixin.py:109} INFO - [2023-08-06 23:37:51,847] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:37:51,861] {logging_mixin.py:109} INFO - [2023-08-06 23:37:51,861] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:37:51,871] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.359 seconds
+[2023-08-06 23:38:22,005] {processor.py:162} INFO - Started process (PID=224) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:38:22,007] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:38:22,009] {logging_mixin.py:109} INFO - [2023-08-06 23:38:22,009] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:38:22,316] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:38:22,351] {logging_mixin.py:109} INFO - [2023-08-06 23:38:22,351] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:38:22,368] {logging_mixin.py:109} INFO - [2023-08-06 23:38:22,367] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:38:22,380] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.380 seconds
+[2023-08-06 23:38:52,504] {processor.py:162} INFO - Started process (PID=229) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:38:52,507] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:38:52,509] {logging_mixin.py:109} INFO - [2023-08-06 23:38:52,509] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:38:52,799] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:38:52,829] {logging_mixin.py:109} INFO - [2023-08-06 23:38:52,829] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:38:52,843] {logging_mixin.py:109} INFO - [2023-08-06 23:38:52,843] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:38:52,854] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.354 seconds
+[2023-08-06 23:39:22,973] {processor.py:162} INFO - Started process (PID=234) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:39:22,976] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:39:22,978] {logging_mixin.py:109} INFO - [2023-08-06 23:39:22,978] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:39:23,273] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:39:23,306] {logging_mixin.py:109} INFO - [2023-08-06 23:39:23,305] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:39:23,318] {logging_mixin.py:109} INFO - [2023-08-06 23:39:23,317] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:39:23,329] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.360 seconds
+[2023-08-06 23:39:53,442] {processor.py:162} INFO - Started process (PID=239) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:39:53,444] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:39:53,446] {logging_mixin.py:109} INFO - [2023-08-06 23:39:53,446] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:39:53,758] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:39:53,791] {logging_mixin.py:109} INFO - [2023-08-06 23:39:53,790] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:39:53,805] {logging_mixin.py:109} INFO - [2023-08-06 23:39:53,805] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:39:53,821] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.382 seconds
+[2023-08-06 23:40:23,946] {processor.py:162} INFO - Started process (PID=244) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:40:23,949] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:40:23,951] {logging_mixin.py:109} INFO - [2023-08-06 23:40:23,951] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:40:24,270] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:40:24,301] {logging_mixin.py:109} INFO - [2023-08-06 23:40:24,300] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:40:24,310] {logging_mixin.py:109} INFO - [2023-08-06 23:40:24,310] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:40:24,323] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.381 seconds
+[2023-08-06 23:40:54,440] {processor.py:162} INFO - Started process (PID=249) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:40:54,442] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:40:54,444] {logging_mixin.py:109} INFO - [2023-08-06 23:40:54,444] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:40:54,754] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:40:54,791] {logging_mixin.py:109} INFO - [2023-08-06 23:40:54,791] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:40:54,802] {logging_mixin.py:109} INFO - [2023-08-06 23:40:54,802] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:40:54,815] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.377 seconds
+[2023-08-06 23:41:24,927] {processor.py:162} INFO - Started process (PID=254) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:41:24,930] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:41:24,931] {logging_mixin.py:109} INFO - [2023-08-06 23:41:24,931] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:41:25,239] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:41:25,271] {logging_mixin.py:109} INFO - [2023-08-06 23:41:25,271] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:41:25,279] {logging_mixin.py:109} INFO - [2023-08-06 23:41:25,279] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:41:25,289] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.365 seconds
+[2023-08-06 23:41:55,411] {processor.py:162} INFO - Started process (PID=259) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:41:55,414] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:41:55,417] {logging_mixin.py:109} INFO - [2023-08-06 23:41:55,417] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:41:55,746] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:41:55,786] {logging_mixin.py:109} INFO - [2023-08-06 23:41:55,786] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:41:55,799] {logging_mixin.py:109} INFO - [2023-08-06 23:41:55,799] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:41:55,815] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.408 seconds
+[2023-08-06 23:42:25,940] {processor.py:162} INFO - Started process (PID=264) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:42:25,943] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:42:25,945] {logging_mixin.py:109} INFO - [2023-08-06 23:42:25,945] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:42:26,248] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:42:26,276] {logging_mixin.py:109} INFO - [2023-08-06 23:42:26,275] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:42:26,283] {logging_mixin.py:109} INFO - [2023-08-06 23:42:26,283] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:42:26,292] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.357 seconds
+[2023-08-06 23:42:56,394] {processor.py:162} INFO - Started process (PID=269) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:42:56,397] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:42:56,398] {logging_mixin.py:109} INFO - [2023-08-06 23:42:56,398] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:42:56,703] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:42:56,731] {logging_mixin.py:109} INFO - [2023-08-06 23:42:56,731] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:42:56,738] {logging_mixin.py:109} INFO - [2023-08-06 23:42:56,738] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:42:56,748] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.357 seconds
+[2023-08-06 23:43:26,874] {processor.py:162} INFO - Started process (PID=274) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:43:26,877] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:43:26,879] {logging_mixin.py:109} INFO - [2023-08-06 23:43:26,879] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:43:27,178] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:43:27,206] {logging_mixin.py:109} INFO - [2023-08-06 23:43:27,206] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:43:27,214] {logging_mixin.py:109} INFO - [2023-08-06 23:43:27,213] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:43:27,222] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.351 seconds
+[2023-08-06 23:43:57,352] {processor.py:162} INFO - Started process (PID=279) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:43:57,355] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:43:57,357] {logging_mixin.py:109} INFO - [2023-08-06 23:43:57,357] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:43:57,695] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:43:57,723] {logging_mixin.py:109} INFO - [2023-08-06 23:43:57,722] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:43:57,731] {logging_mixin.py:109} INFO - [2023-08-06 23:43:57,731] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:43:57,740] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.393 seconds
+[2023-08-06 23:44:27,869] {processor.py:162} INFO - Started process (PID=284) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:44:27,872] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:44:27,874] {logging_mixin.py:109} INFO - [2023-08-06 23:44:27,874] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:44:28,197] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:44:28,241] {logging_mixin.py:109} INFO - [2023-08-06 23:44:28,240] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:44:28,250] {logging_mixin.py:109} INFO - [2023-08-06 23:44:28,249] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:44:28,261] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.396 seconds
+[2023-08-06 23:44:58,371] {processor.py:162} INFO - Started process (PID=289) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:44:58,374] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:44:58,376] {logging_mixin.py:109} INFO - [2023-08-06 23:44:58,376] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:44:58,733] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:44:58,763] {logging_mixin.py:109} INFO - [2023-08-06 23:44:58,763] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:44:58,771] {logging_mixin.py:109} INFO - [2023-08-06 23:44:58,771] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:44:58,781] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.412 seconds
+[2023-08-06 23:45:28,907] {processor.py:162} INFO - Started process (PID=294) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:45:28,910] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:45:28,911] {logging_mixin.py:109} INFO - [2023-08-06 23:45:28,911] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:45:29,215] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:45:29,242] {logging_mixin.py:109} INFO - [2023-08-06 23:45:29,242] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:45:29,251] {logging_mixin.py:109} INFO - [2023-08-06 23:45:29,250] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:45:29,260] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.357 seconds
+[2023-08-06 23:45:59,395] {processor.py:162} INFO - Started process (PID=299) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:45:59,397] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:45:59,399] {logging_mixin.py:109} INFO - [2023-08-06 23:45:59,399] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:45:59,701] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:45:59,728] {logging_mixin.py:109} INFO - [2023-08-06 23:45:59,728] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:45:59,737] {logging_mixin.py:109} INFO - [2023-08-06 23:45:59,736] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:45:59,746] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.355 seconds
+[2023-08-06 23:46:29,890] {processor.py:162} INFO - Started process (PID=304) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:46:29,892] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:46:29,895] {logging_mixin.py:109} INFO - [2023-08-06 23:46:29,894] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:46:30,195] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:46:30,223] {logging_mixin.py:109} INFO - [2023-08-06 23:46:30,223] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:46:30,230] {logging_mixin.py:109} INFO - [2023-08-06 23:46:30,230] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:46:30,239] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.353 seconds
+[2023-08-06 23:47:00,365] {processor.py:162} INFO - Started process (PID=309) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:47:00,368] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:47:00,370] {logging_mixin.py:109} INFO - [2023-08-06 23:47:00,370] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:47:00,670] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:47:00,698] {logging_mixin.py:109} INFO - [2023-08-06 23:47:00,698] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:47:00,706] {logging_mixin.py:109} INFO - [2023-08-06 23:47:00,706] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:47:00,715] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.354 seconds
+[2023-08-06 23:47:30,874] {processor.py:162} INFO - Started process (PID=314) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:47:30,877] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:47:30,880] {logging_mixin.py:109} INFO - [2023-08-06 23:47:30,880] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:47:31,254] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:47:31,286] {logging_mixin.py:109} INFO - [2023-08-06 23:47:31,286] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:47:31,295] {logging_mixin.py:109} INFO - [2023-08-06 23:47:31,295] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:47:31,305] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.435 seconds
+[2023-08-06 23:47:49,945] {processor.py:162} INFO - Started process (PID=319) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:47:49,947] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:47:49,949] {logging_mixin.py:109} INFO - [2023-08-06 23:47:49,949] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:47:50,369] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:47:50,404] {logging_mixin.py:109} INFO - [2023-08-06 23:47:50,404] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:47:50,414] {logging_mixin.py:109} INFO - [2023-08-06 23:47:50,414] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:47:50,428] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.487 seconds
+[2023-08-06 23:48:20,554] {processor.py:162} INFO - Started process (PID=324) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:48:20,556] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:48:20,559] {logging_mixin.py:109} INFO - [2023-08-06 23:48:20,559] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:48:20,997] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:48:21,037] {logging_mixin.py:109} INFO - [2023-08-06 23:48:21,037] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:48:21,049] {logging_mixin.py:109} INFO - [2023-08-06 23:48:21,049] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:48:21,064] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.513 seconds
+[2023-08-06 23:48:51,167] {processor.py:162} INFO - Started process (PID=329) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:48:51,169] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:48:51,171] {logging_mixin.py:109} INFO - [2023-08-06 23:48:51,171] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:48:51,486] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:48:51,519] {logging_mixin.py:109} INFO - [2023-08-06 23:48:51,519] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:48:51,531] {logging_mixin.py:109} INFO - [2023-08-06 23:48:51,531] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:48:51,543] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.379 seconds
+[2023-08-06 23:49:21,664] {processor.py:162} INFO - Started process (PID=334) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:49:21,667] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:49:21,669] {logging_mixin.py:109} INFO - [2023-08-06 23:49:21,668] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:49:22,000] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:49:22,028] {logging_mixin.py:109} INFO - [2023-08-06 23:49:22,028] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:49:22,036] {logging_mixin.py:109} INFO - [2023-08-06 23:49:22,036] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:49:22,044] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.384 seconds
+[2023-08-06 23:49:52,178] {processor.py:162} INFO - Started process (PID=339) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:49:52,182] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:49:52,184] {logging_mixin.py:109} INFO - [2023-08-06 23:49:52,184] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:49:52,481] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:49:52,510] {logging_mixin.py:109} INFO - [2023-08-06 23:49:52,509] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:49:52,518] {logging_mixin.py:109} INFO - [2023-08-06 23:49:52,518] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:49:52,526] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.352 seconds
+[2023-08-06 23:50:22,652] {processor.py:162} INFO - Started process (PID=344) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:50:22,654] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:50:22,656] {logging_mixin.py:109} INFO - [2023-08-06 23:50:22,656] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:50:23,002] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:50:23,034] {logging_mixin.py:109} INFO - [2023-08-06 23:50:23,034] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:50:23,042] {logging_mixin.py:109} INFO - [2023-08-06 23:50:23,041] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:50:23,051] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.403 seconds
+[2023-08-06 23:50:53,168] {processor.py:162} INFO - Started process (PID=349) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:50:53,171] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:50:53,173] {logging_mixin.py:109} INFO - [2023-08-06 23:50:53,173] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:50:53,489] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:50:53,519] {logging_mixin.py:109} INFO - [2023-08-06 23:50:53,518] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:50:53,527] {logging_mixin.py:109} INFO - [2023-08-06 23:50:53,526] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:50:53,536] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.370 seconds
+[2023-08-06 23:51:23,647] {processor.py:162} INFO - Started process (PID=354) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:51:23,650] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:51:23,652] {logging_mixin.py:109} INFO - [2023-08-06 23:51:23,652] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:51:23,992] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:51:24,021] {logging_mixin.py:109} INFO - [2023-08-06 23:51:24,020] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:51:24,028] {logging_mixin.py:109} INFO - [2023-08-06 23:51:24,028] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:51:24,037] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.394 seconds
+[2023-08-06 23:51:54,172] {processor.py:162} INFO - Started process (PID=359) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:51:54,175] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:51:54,176] {logging_mixin.py:109} INFO - [2023-08-06 23:51:54,176] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:51:54,534] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:51:54,562] {logging_mixin.py:109} INFO - [2023-08-06 23:51:54,562] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:51:54,570] {logging_mixin.py:109} INFO - [2023-08-06 23:51:54,570] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:51:54,580] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.410 seconds
+[2023-08-06 23:52:24,714] {processor.py:162} INFO - Started process (PID=364) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:52:24,716] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:52:24,718] {logging_mixin.py:109} INFO - [2023-08-06 23:52:24,718] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:52:25,037] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:52:25,066] {logging_mixin.py:109} INFO - [2023-08-06 23:52:25,066] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:52:25,074] {logging_mixin.py:109} INFO - [2023-08-06 23:52:25,074] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:52:25,083] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.374 seconds
+[2023-08-06 23:52:55,188] {processor.py:162} INFO - Started process (PID=369) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:52:55,191] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:52:55,192] {logging_mixin.py:109} INFO - [2023-08-06 23:52:55,192] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:52:55,535] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:52:55,568] {logging_mixin.py:109} INFO - [2023-08-06 23:52:55,568] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:52:55,577] {logging_mixin.py:109} INFO - [2023-08-06 23:52:55,577] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:52:55,586] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.402 seconds
+[2023-08-06 23:53:25,698] {processor.py:162} INFO - Started process (PID=374) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:53:25,701] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:53:25,703] {logging_mixin.py:109} INFO - [2023-08-06 23:53:25,703] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:53:26,103] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:53:26,131] {logging_mixin.py:109} INFO - [2023-08-06 23:53:26,131] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:53:26,139] {logging_mixin.py:109} INFO - [2023-08-06 23:53:26,139] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:53:26,148] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.453 seconds
+[2023-08-06 23:53:56,266] {processor.py:162} INFO - Started process (PID=379) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:53:56,268] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:53:56,270] {logging_mixin.py:109} INFO - [2023-08-06 23:53:56,270] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:53:56,585] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:53:56,672] {logging_mixin.py:109} INFO - [2023-08-06 23:53:56,672] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:53:56,683] {logging_mixin.py:109} INFO - [2023-08-06 23:53:56,683] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:53:56,692] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.431 seconds
+[2023-08-06 23:54:26,816] {processor.py:162} INFO - Started process (PID=384) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:54:26,818] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:54:26,821] {logging_mixin.py:109} INFO - [2023-08-06 23:54:26,821] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:54:27,127] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:54:27,155] {logging_mixin.py:109} INFO - [2023-08-06 23:54:27,155] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:54:27,163] {logging_mixin.py:109} INFO - [2023-08-06 23:54:27,163] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:54:27,172] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.360 seconds
+[2023-08-06 23:54:57,296] {processor.py:162} INFO - Started process (PID=389) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:54:57,298] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:54:57,300] {logging_mixin.py:109} INFO - [2023-08-06 23:54:57,300] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:54:57,609] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:54:57,637] {logging_mixin.py:109} INFO - [2023-08-06 23:54:57,637] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:54:57,645] {logging_mixin.py:109} INFO - [2023-08-06 23:54:57,645] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:54:57,655] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.363 seconds
+[2023-08-06 23:55:27,771] {processor.py:162} INFO - Started process (PID=394) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:55:27,773] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:55:27,775] {logging_mixin.py:109} INFO - [2023-08-06 23:55:27,775] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:55:28,121] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:55:28,158] {logging_mixin.py:109} INFO - [2023-08-06 23:55:28,158] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:55:28,167] {logging_mixin.py:109} INFO - [2023-08-06 23:55:28,167] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:55:28,176] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.408 seconds
+[2023-08-06 23:55:58,288] {processor.py:162} INFO - Started process (PID=399) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:55:58,291] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:55:58,293] {logging_mixin.py:109} INFO - [2023-08-06 23:55:58,292] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:55:58,611] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:55:58,645] {logging_mixin.py:109} INFO - [2023-08-06 23:55:58,645] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:55:58,657] {logging_mixin.py:109} INFO - [2023-08-06 23:55:58,657] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:55:58,670] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.385 seconds
+[2023-08-06 23:56:28,786] {processor.py:162} INFO - Started process (PID=404) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:56:28,794] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:56:28,796] {logging_mixin.py:109} INFO - [2023-08-06 23:56:28,796] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:56:29,261] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:56:29,295] {logging_mixin.py:109} INFO - [2023-08-06 23:56:29,295] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:56:29,305] {logging_mixin.py:109} INFO - [2023-08-06 23:56:29,305] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:56:29,316] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.535 seconds
+[2023-08-06 23:56:59,427] {processor.py:162} INFO - Started process (PID=409) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:56:59,429] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:56:59,430] {logging_mixin.py:109} INFO - [2023-08-06 23:56:59,430] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:56:59,741] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:56:59,768] {logging_mixin.py:109} INFO - [2023-08-06 23:56:59,768] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:56:59,776] {logging_mixin.py:109} INFO - [2023-08-06 23:56:59,775] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:56:59,785] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.361 seconds
+[2023-08-06 23:57:29,899] {processor.py:162} INFO - Started process (PID=414) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:57:29,902] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:57:29,904] {logging_mixin.py:109} INFO - [2023-08-06 23:57:29,903] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:57:30,228] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:57:30,262] {logging_mixin.py:109} INFO - [2023-08-06 23:57:30,261] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:57:30,272] {logging_mixin.py:109} INFO - [2023-08-06 23:57:30,272] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:57:30,284] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.389 seconds
+[2023-08-06 23:58:00,394] {processor.py:162} INFO - Started process (PID=419) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:58:00,397] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:58:00,399] {logging_mixin.py:109} INFO - [2023-08-06 23:58:00,399] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:58:00,728] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:58:00,758] {logging_mixin.py:109} INFO - [2023-08-06 23:58:00,757] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:58:00,765] {logging_mixin.py:109} INFO - [2023-08-06 23:58:00,765] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:58:00,774] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.383 seconds
+[2023-08-06 23:58:30,888] {processor.py:162} INFO - Started process (PID=424) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:58:30,890] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:58:30,892] {logging_mixin.py:109} INFO - [2023-08-06 23:58:30,892] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:58:31,195] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:58:31,223] {logging_mixin.py:109} INFO - [2023-08-06 23:58:31,222] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:58:31,230] {logging_mixin.py:109} INFO - [2023-08-06 23:58:31,230] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:58:31,240] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.355 seconds
+[2023-08-06 23:59:01,357] {processor.py:162} INFO - Started process (PID=429) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:59:01,359] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:59:01,361] {logging_mixin.py:109} INFO - [2023-08-06 23:59:01,360] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:59:01,659] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:59:01,687] {logging_mixin.py:109} INFO - [2023-08-06 23:59:01,687] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:59:01,694] {logging_mixin.py:109} INFO - [2023-08-06 23:59:01,694] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:59:01,703] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.351 seconds
+[2023-08-06 23:59:31,812] {processor.py:162} INFO - Started process (PID=434) to work on /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:59:31,814] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py for tasks to queue
+[2023-08-06 23:59:31,817] {logging_mixin.py:109} INFO - [2023-08-06 23:59:31,816] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:59:32,124] {processor.py:623} INFO - DAG(s) dict_keys(['clean_dag_run']) retrieved from /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py
+[2023-08-06 23:59:32,152] {logging_mixin.py:109} INFO - [2023-08-06 23:59:32,152] {dag.py:1834} INFO - Sync 1 DAGs
+[2023-08-06 23:59:32,160] {logging_mixin.py:109} INFO - [2023-08-06 23:59:32,160] {dag.py:2287} INFO - Setting next_dagrun for clean_dag_run to None
+[2023-08-06 23:59:32,169] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/clean_dag_run.py took 0.361 seconds

@@ -1,0 +1,708 @@
+[2023-08-07 02:28:46,019] {processor.py:162} INFO - Started process (PID=1301) to work on /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:28:46,022] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/my_dag.py for tasks to queue
+[2023-08-07 02:28:46,026] {logging_mixin.py:109} INFO - [2023-08-07 02:28:46,025] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:28:47,322] {logging_mixin.py:109} INFO - [2023-08-07 02:28:47,313] {dagbag.py:329} ERROR - Failed to import: /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1085, in fast_cwl_load
+    with open(pickled_workflow, "rb") as input_stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/john.mcauliffe/documents/project1/cwl_pickle_folder/4ff24393afed2b9569298ab53ded8817.p'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/helpers.py", line 83, in get_uncompressed
+    uncompressed = gzip.decompress(
+  File "/usr/local/lib/python3.8/gzip.py", line 548, in decompress
+    return f.read()
+  File "/usr/local/lib/python3.8/gzip.py", line 292, in read
+    return self._buffer.read(size)
+  File "/usr/local/lib/python3.8/gzip.py", line 479, in read
+    if not self._read_gzip_header():
+  File "/usr/local/lib/python3.8/gzip.py", line 427, in _read_gzip_header
+    raise BadGzipFile('Not a gzipped file (%r)' % magic)
+gzip.BadGzipFile: Not a gzipped file (b'\xfdK')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1141, in slow_cwl_load
+    get_uncompressed(workflow, parse_as_yaml=True),
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/helpers.py", line 89, in get_uncompressed
+    uncompressed = zlib.decompress(
+zlib.error: Error -3 while decompressing data: incorrect header check
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/john.mcauliffe/documents/project1/dags/my_dag.py", line 3, in <module>
+    dag = CWLDAG(
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/extensions/cwldag.py", line 48, in __init__
+    self.workflow_tool = fast_cwl_load(         # keeps only the tool (CommentedMap object)
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1090, in fast_cwl_load
+    workflow_tool = slow_cwl_load(
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1147, in slow_cwl_load
+    workflow_data = __load(workflow)
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1129, in __load
+    return load_tool(
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 476, in load_tool
+    loadingContext, workflowobj, uri = fetch_document(argsworkflow, loadingContext)
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 125, in fetch_document
+    uri, fileuri = resolve_tool_uri(
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 98, in resolve_tool_uri
+    raise ValidationException("Not found: '%s'" % argsworkflow)
+schema_salad.exceptions.ValidationException: Not found: '/Users/john.mcauliffe/documents/dag-storage/scatter.cwl'
+[2023-08-07 02:28:47,331] {processor.py:625} WARNING - No viable dags retrieved from /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:28:47,399] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/my_dag.py took 1.385 seconds
+[2023-08-07 02:44:20,596] {processor.py:162} INFO - Started process (PID=1311) to work on /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:44:20,601] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/my_dag.py for tasks to queue
+[2023-08-07 02:44:20,604] {logging_mixin.py:109} INFO - [2023-08-07 02:44:20,604] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:44:22,200] {logging_mixin.py:109} INFO - [2023-08-07 02:44:22,193] {dagbag.py:329} ERROR - Failed to import: /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1085, in fast_cwl_load
+    with open(pickled_workflow, "rb") as input_stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/john.mcauliffe/documents/project1/cwl_pickle_folder/4ff24393afed2b9569298ab53ded8817.p'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/helpers.py", line 83, in get_uncompressed
+    uncompressed = gzip.decompress(
+  File "/usr/local/lib/python3.8/gzip.py", line 548, in decompress
+    return f.read()
+  File "/usr/local/lib/python3.8/gzip.py", line 292, in read
+    return self._buffer.read(size)
+  File "/usr/local/lib/python3.8/gzip.py", line 479, in read
+    if not self._read_gzip_header():
+  File "/usr/local/lib/python3.8/gzip.py", line 427, in _read_gzip_header
+    raise BadGzipFile('Not a gzipped file (%r)' % magic)
+gzip.BadGzipFile: Not a gzipped file (b'\xfdK')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1141, in slow_cwl_load
+    get_uncompressed(workflow, parse_as_yaml=True),
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/helpers.py", line 89, in get_uncompressed
+    uncompressed = zlib.decompress(
+zlib.error: Error -3 while decompressing data: incorrect header check
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/john.mcauliffe/documents/project1/dags/my_dag.py", line 3, in <module>
+    dag = CWLDAG(
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/extensions/cwldag.py", line 48, in __init__
+    self.workflow_tool = fast_cwl_load(         # keeps only the tool (CommentedMap object)
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1090, in fast_cwl_load
+    workflow_tool = slow_cwl_load(
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1147, in slow_cwl_load
+    workflow_data = __load(workflow)
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1129, in __load
+    return load_tool(
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 476, in load_tool
+    loadingContext, workflowobj, uri = fetch_document(argsworkflow, loadingContext)
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 125, in fetch_document
+    uri, fileuri = resolve_tool_uri(
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 98, in resolve_tool_uri
+    raise ValidationException("Not found: '%s'" % argsworkflow)
+schema_salad.exceptions.ValidationException: Not found: '/Users/john.mcauliffe/documents/dag-storage/scatter.cwl'
+[2023-08-07 02:44:22,206] {processor.py:625} WARNING - No viable dags retrieved from /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:44:22,284] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/my_dag.py took 1.693 seconds
+[2023-08-07 02:44:52,520] {processor.py:162} INFO - Started process (PID=1321) to work on /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:44:52,523] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/my_dag.py for tasks to queue
+[2023-08-07 02:44:52,528] {logging_mixin.py:109} INFO - [2023-08-07 02:44:52,528] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:44:53,905] {logging_mixin.py:109} INFO - [2023-08-07 02:44:53,901] {dagbag.py:329} ERROR - Failed to import: /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1085, in fast_cwl_load
+    with open(pickled_workflow, "rb") as input_stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/john.mcauliffe/documents/project1/cwl_pickle_folder/4ff24393afed2b9569298ab53ded8817.p'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/helpers.py", line 83, in get_uncompressed
+    uncompressed = gzip.decompress(
+  File "/usr/local/lib/python3.8/gzip.py", line 548, in decompress
+    return f.read()
+  File "/usr/local/lib/python3.8/gzip.py", line 292, in read
+    return self._buffer.read(size)
+  File "/usr/local/lib/python3.8/gzip.py", line 479, in read
+    if not self._read_gzip_header():
+  File "/usr/local/lib/python3.8/gzip.py", line 427, in _read_gzip_header
+    raise BadGzipFile('Not a gzipped file (%r)' % magic)
+gzip.BadGzipFile: Not a gzipped file (b'\xfdK')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1141, in slow_cwl_load
+    get_uncompressed(workflow, parse_as_yaml=True),
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/helpers.py", line 89, in get_uncompressed
+    uncompressed = zlib.decompress(
+zlib.error: Error -3 while decompressing data: incorrect header check
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/john.mcauliffe/documents/project1/dags/my_dag.py", line 3, in <module>
+    dag = CWLDAG(
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/extensions/cwldag.py", line 48, in __init__
+    self.workflow_tool = fast_cwl_load(         # keeps only the tool (CommentedMap object)
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1090, in fast_cwl_load
+    workflow_tool = slow_cwl_load(
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1147, in slow_cwl_load
+    workflow_data = __load(workflow)
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1129, in __load
+    return load_tool(
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 476, in load_tool
+    loadingContext, workflowobj, uri = fetch_document(argsworkflow, loadingContext)
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 125, in fetch_document
+    uri, fileuri = resolve_tool_uri(
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 98, in resolve_tool_uri
+    raise ValidationException("Not found: '%s'" % argsworkflow)
+schema_salad.exceptions.ValidationException: Not found: '/Users/john.mcauliffe/documents/dag-storage/scatter.cwl'
+[2023-08-07 02:44:53,911] {processor.py:625} WARNING - No viable dags retrieved from /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:44:53,956] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/my_dag.py took 1.440 seconds
+[2023-08-07 02:45:24,182] {processor.py:162} INFO - Started process (PID=1331) to work on /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:45:24,185] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/my_dag.py for tasks to queue
+[2023-08-07 02:45:24,187] {logging_mixin.py:109} INFO - [2023-08-07 02:45:24,187] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:45:25,271] {logging_mixin.py:109} INFO - [2023-08-07 02:45:25,263] {dagbag.py:329} ERROR - Failed to import: /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1085, in fast_cwl_load
+    with open(pickled_workflow, "rb") as input_stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/john.mcauliffe/documents/project1/cwl_pickle_folder/4ff24393afed2b9569298ab53ded8817.p'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/helpers.py", line 83, in get_uncompressed
+    uncompressed = gzip.decompress(
+  File "/usr/local/lib/python3.8/gzip.py", line 548, in decompress
+    return f.read()
+  File "/usr/local/lib/python3.8/gzip.py", line 292, in read
+    return self._buffer.read(size)
+  File "/usr/local/lib/python3.8/gzip.py", line 479, in read
+    if not self._read_gzip_header():
+  File "/usr/local/lib/python3.8/gzip.py", line 427, in _read_gzip_header
+    raise BadGzipFile('Not a gzipped file (%r)' % magic)
+gzip.BadGzipFile: Not a gzipped file (b'\xfdK')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1141, in slow_cwl_load
+    get_uncompressed(workflow, parse_as_yaml=True),
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/helpers.py", line 89, in get_uncompressed
+    uncompressed = zlib.decompress(
+zlib.error: Error -3 while decompressing data: incorrect header check
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/john.mcauliffe/documents/project1/dags/my_dag.py", line 3, in <module>
+    dag = CWLDAG(
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/extensions/cwldag.py", line 48, in __init__
+    self.workflow_tool = fast_cwl_load(         # keeps only the tool (CommentedMap object)
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1090, in fast_cwl_load
+    workflow_tool = slow_cwl_load(
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1147, in slow_cwl_load
+    workflow_data = __load(workflow)
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1129, in __load
+    return load_tool(
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 476, in load_tool
+    loadingContext, workflowobj, uri = fetch_document(argsworkflow, loadingContext)
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 125, in fetch_document
+    uri, fileuri = resolve_tool_uri(
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 98, in resolve_tool_uri
+    raise ValidationException("Not found: '%s'" % argsworkflow)
+schema_salad.exceptions.ValidationException: Not found: '/Users/john.mcauliffe/documents/dag-storage/scatter.cwl'
+[2023-08-07 02:45:25,282] {processor.py:625} WARNING - No viable dags retrieved from /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:45:25,319] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/my_dag.py took 1.141 seconds
+[2023-08-07 02:45:55,548] {processor.py:162} INFO - Started process (PID=1341) to work on /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:45:55,550] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/my_dag.py for tasks to queue
+[2023-08-07 02:45:55,553] {logging_mixin.py:109} INFO - [2023-08-07 02:45:55,552] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:45:56,699] {logging_mixin.py:109} INFO - [2023-08-07 02:45:56,696] {dagbag.py:329} ERROR - Failed to import: /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1085, in fast_cwl_load
+    with open(pickled_workflow, "rb") as input_stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/john.mcauliffe/documents/project1/cwl_pickle_folder/4ff24393afed2b9569298ab53ded8817.p'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/helpers.py", line 83, in get_uncompressed
+    uncompressed = gzip.decompress(
+  File "/usr/local/lib/python3.8/gzip.py", line 548, in decompress
+    return f.read()
+  File "/usr/local/lib/python3.8/gzip.py", line 292, in read
+    return self._buffer.read(size)
+  File "/usr/local/lib/python3.8/gzip.py", line 479, in read
+    if not self._read_gzip_header():
+  File "/usr/local/lib/python3.8/gzip.py", line 427, in _read_gzip_header
+    raise BadGzipFile('Not a gzipped file (%r)' % magic)
+gzip.BadGzipFile: Not a gzipped file (b'\xfdK')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1141, in slow_cwl_load
+    get_uncompressed(workflow, parse_as_yaml=True),
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/helpers.py", line 89, in get_uncompressed
+    uncompressed = zlib.decompress(
+zlib.error: Error -3 while decompressing data: incorrect header check
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/john.mcauliffe/documents/project1/dags/my_dag.py", line 3, in <module>
+    dag = CWLDAG(
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/extensions/cwldag.py", line 48, in __init__
+    self.workflow_tool = fast_cwl_load(         # keeps only the tool (CommentedMap object)
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1090, in fast_cwl_load
+    workflow_tool = slow_cwl_load(
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1147, in slow_cwl_load
+    workflow_data = __load(workflow)
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1129, in __load
+    return load_tool(
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 476, in load_tool
+    loadingContext, workflowobj, uri = fetch_document(argsworkflow, loadingContext)
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 125, in fetch_document
+    uri, fileuri = resolve_tool_uri(
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 98, in resolve_tool_uri
+    raise ValidationException("Not found: '%s'" % argsworkflow)
+schema_salad.exceptions.ValidationException: Not found: '/Users/john.mcauliffe/documents/dag-storage/scatter.cwl'
+[2023-08-07 02:45:56,704] {processor.py:625} WARNING - No viable dags retrieved from /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:45:56,733] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/my_dag.py took 1.190 seconds
+[2023-08-07 02:46:26,894] {processor.py:162} INFO - Started process (PID=1351) to work on /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:46:26,896] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/my_dag.py for tasks to queue
+[2023-08-07 02:46:26,898] {logging_mixin.py:109} INFO - [2023-08-07 02:46:26,898] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:46:28,057] {logging_mixin.py:109} INFO - [2023-08-07 02:46:28,053] {dagbag.py:329} ERROR - Failed to import: /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1085, in fast_cwl_load
+    with open(pickled_workflow, "rb") as input_stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/john.mcauliffe/documents/project1/cwl_pickle_folder/4ff24393afed2b9569298ab53ded8817.p'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/helpers.py", line 83, in get_uncompressed
+    uncompressed = gzip.decompress(
+  File "/usr/local/lib/python3.8/gzip.py", line 548, in decompress
+    return f.read()
+  File "/usr/local/lib/python3.8/gzip.py", line 292, in read
+    return self._buffer.read(size)
+  File "/usr/local/lib/python3.8/gzip.py", line 479, in read
+    if not self._read_gzip_header():
+  File "/usr/local/lib/python3.8/gzip.py", line 427, in _read_gzip_header
+    raise BadGzipFile('Not a gzipped file (%r)' % magic)
+gzip.BadGzipFile: Not a gzipped file (b'\xfdK')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1141, in slow_cwl_load
+    get_uncompressed(workflow, parse_as_yaml=True),
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/helpers.py", line 89, in get_uncompressed
+    uncompressed = zlib.decompress(
+zlib.error: Error -3 while decompressing data: incorrect header check
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/john.mcauliffe/documents/project1/dags/my_dag.py", line 3, in <module>
+    dag = CWLDAG(
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/extensions/cwldag.py", line 48, in __init__
+    self.workflow_tool = fast_cwl_load(         # keeps only the tool (CommentedMap object)
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1090, in fast_cwl_load
+    workflow_tool = slow_cwl_load(
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1147, in slow_cwl_load
+    workflow_data = __load(workflow)
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1129, in __load
+    return load_tool(
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 476, in load_tool
+    loadingContext, workflowobj, uri = fetch_document(argsworkflow, loadingContext)
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 125, in fetch_document
+    uri, fileuri = resolve_tool_uri(
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 98, in resolve_tool_uri
+    raise ValidationException("Not found: '%s'" % argsworkflow)
+schema_salad.exceptions.ValidationException: Not found: '/Users/john.mcauliffe/documents/dag-storage/scatter.cwl'
+[2023-08-07 02:46:28,063] {processor.py:625} WARNING - No viable dags retrieved from /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:46:28,094] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/my_dag.py took 1.203 seconds
+[2023-08-07 02:46:58,205] {processor.py:162} INFO - Started process (PID=1361) to work on /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:46:58,206] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/my_dag.py for tasks to queue
+[2023-08-07 02:46:58,208] {logging_mixin.py:109} INFO - [2023-08-07 02:46:58,208] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:46:59,206] {logging_mixin.py:109} INFO - [2023-08-07 02:46:59,198] {dagbag.py:329} ERROR - Failed to import: /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1085, in fast_cwl_load
+    with open(pickled_workflow, "rb") as input_stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/john.mcauliffe/documents/project1/cwl_pickle_folder/4ff24393afed2b9569298ab53ded8817.p'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/helpers.py", line 83, in get_uncompressed
+    uncompressed = gzip.decompress(
+  File "/usr/local/lib/python3.8/gzip.py", line 548, in decompress
+    return f.read()
+  File "/usr/local/lib/python3.8/gzip.py", line 292, in read
+    return self._buffer.read(size)
+  File "/usr/local/lib/python3.8/gzip.py", line 479, in read
+    if not self._read_gzip_header():
+  File "/usr/local/lib/python3.8/gzip.py", line 427, in _read_gzip_header
+    raise BadGzipFile('Not a gzipped file (%r)' % magic)
+gzip.BadGzipFile: Not a gzipped file (b'\xfdK')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1141, in slow_cwl_load
+    get_uncompressed(workflow, parse_as_yaml=True),
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/helpers.py", line 89, in get_uncompressed
+    uncompressed = zlib.decompress(
+zlib.error: Error -3 while decompressing data: incorrect header check
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/john.mcauliffe/documents/project1/dags/my_dag.py", line 3, in <module>
+    dag = CWLDAG(
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/extensions/cwldag.py", line 48, in __init__
+    self.workflow_tool = fast_cwl_load(         # keeps only the tool (CommentedMap object)
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1090, in fast_cwl_load
+    workflow_tool = slow_cwl_load(
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1147, in slow_cwl_load
+    workflow_data = __load(workflow)
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1129, in __load
+    return load_tool(
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 476, in load_tool
+    loadingContext, workflowobj, uri = fetch_document(argsworkflow, loadingContext)
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 125, in fetch_document
+    uri, fileuri = resolve_tool_uri(
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 98, in resolve_tool_uri
+    raise ValidationException("Not found: '%s'" % argsworkflow)
+schema_salad.exceptions.ValidationException: Not found: '/Users/john.mcauliffe/documents/dag-storage/scatter.cwl'
+[2023-08-07 02:46:59,217] {processor.py:625} WARNING - No viable dags retrieved from /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:46:59,254] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/my_dag.py took 1.053 seconds
+[2023-08-07 02:47:29,488] {processor.py:162} INFO - Started process (PID=1371) to work on /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:47:29,491] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/my_dag.py for tasks to queue
+[2023-08-07 02:47:29,492] {logging_mixin.py:109} INFO - [2023-08-07 02:47:29,492] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:47:30,561] {logging_mixin.py:109} INFO - [2023-08-07 02:47:30,554] {dagbag.py:329} ERROR - Failed to import: /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1085, in fast_cwl_load
+    with open(pickled_workflow, "rb") as input_stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/john.mcauliffe/documents/project1/cwl_pickle_folder/4ff24393afed2b9569298ab53ded8817.p'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/helpers.py", line 83, in get_uncompressed
+    uncompressed = gzip.decompress(
+  File "/usr/local/lib/python3.8/gzip.py", line 548, in decompress
+    return f.read()
+  File "/usr/local/lib/python3.8/gzip.py", line 292, in read
+    return self._buffer.read(size)
+  File "/usr/local/lib/python3.8/gzip.py", line 479, in read
+    if not self._read_gzip_header():
+  File "/usr/local/lib/python3.8/gzip.py", line 427, in _read_gzip_header
+    raise BadGzipFile('Not a gzipped file (%r)' % magic)
+gzip.BadGzipFile: Not a gzipped file (b'\xfdK')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1141, in slow_cwl_load
+    get_uncompressed(workflow, parse_as_yaml=True),
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/helpers.py", line 89, in get_uncompressed
+    uncompressed = zlib.decompress(
+zlib.error: Error -3 while decompressing data: incorrect header check
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/john.mcauliffe/documents/project1/dags/my_dag.py", line 3, in <module>
+    dag = CWLDAG(
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/extensions/cwldag.py", line 48, in __init__
+    self.workflow_tool = fast_cwl_load(         # keeps only the tool (CommentedMap object)
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1090, in fast_cwl_load
+    workflow_tool = slow_cwl_load(
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1147, in slow_cwl_load
+    workflow_data = __load(workflow)
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1129, in __load
+    return load_tool(
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 476, in load_tool
+    loadingContext, workflowobj, uri = fetch_document(argsworkflow, loadingContext)
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 125, in fetch_document
+    uri, fileuri = resolve_tool_uri(
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 98, in resolve_tool_uri
+    raise ValidationException("Not found: '%s'" % argsworkflow)
+schema_salad.exceptions.ValidationException: Not found: '/Users/john.mcauliffe/documents/dag-storage/scatter.cwl'
+[2023-08-07 02:47:30,570] {processor.py:625} WARNING - No viable dags retrieved from /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:47:30,608] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/my_dag.py took 1.123 seconds
+[2023-08-07 02:48:00,846] {processor.py:162} INFO - Started process (PID=1381) to work on /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:48:00,849] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/my_dag.py for tasks to queue
+[2023-08-07 02:48:00,850] {logging_mixin.py:109} INFO - [2023-08-07 02:48:00,850] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:48:02,075] {logging_mixin.py:109} INFO - [2023-08-07 02:48:02,072] {dagbag.py:329} ERROR - Failed to import: /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1085, in fast_cwl_load
+    with open(pickled_workflow, "rb") as input_stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/john.mcauliffe/documents/project1/cwl_pickle_folder/4ff24393afed2b9569298ab53ded8817.p'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/helpers.py", line 83, in get_uncompressed
+    uncompressed = gzip.decompress(
+  File "/usr/local/lib/python3.8/gzip.py", line 548, in decompress
+    return f.read()
+  File "/usr/local/lib/python3.8/gzip.py", line 292, in read
+    return self._buffer.read(size)
+  File "/usr/local/lib/python3.8/gzip.py", line 479, in read
+    if not self._read_gzip_header():
+  File "/usr/local/lib/python3.8/gzip.py", line 427, in _read_gzip_header
+    raise BadGzipFile('Not a gzipped file (%r)' % magic)
+gzip.BadGzipFile: Not a gzipped file (b'\xfdK')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1141, in slow_cwl_load
+    get_uncompressed(workflow, parse_as_yaml=True),
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/helpers.py", line 89, in get_uncompressed
+    uncompressed = zlib.decompress(
+zlib.error: Error -3 while decompressing data: incorrect header check
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/john.mcauliffe/documents/project1/dags/my_dag.py", line 3, in <module>
+    dag = CWLDAG(
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/extensions/cwldag.py", line 48, in __init__
+    self.workflow_tool = fast_cwl_load(         # keeps only the tool (CommentedMap object)
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1090, in fast_cwl_load
+    workflow_tool = slow_cwl_load(
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1147, in slow_cwl_load
+    workflow_data = __load(workflow)
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1129, in __load
+    return load_tool(
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 476, in load_tool
+    loadingContext, workflowobj, uri = fetch_document(argsworkflow, loadingContext)
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 125, in fetch_document
+    uri, fileuri = resolve_tool_uri(
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 98, in resolve_tool_uri
+    raise ValidationException("Not found: '%s'" % argsworkflow)
+schema_salad.exceptions.ValidationException: Not found: '/Users/john.mcauliffe/documents/dag-storage/scatter.cwl'
+[2023-08-07 02:48:02,080] {processor.py:625} WARNING - No viable dags retrieved from /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:48:02,109] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/my_dag.py took 1.267 seconds
+[2023-08-07 02:48:32,295] {processor.py:162} INFO - Started process (PID=1390) to work on /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:48:32,297] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/my_dag.py for tasks to queue
+[2023-08-07 02:48:32,299] {logging_mixin.py:109} INFO - [2023-08-07 02:48:32,299] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:48:33,462] {logging_mixin.py:109} INFO - [2023-08-07 02:48:33,458] {dagbag.py:329} ERROR - Failed to import: /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1085, in fast_cwl_load
+    with open(pickled_workflow, "rb") as input_stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/john.mcauliffe/documents/project1/cwl_pickle_folder/4ff24393afed2b9569298ab53ded8817.p'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/helpers.py", line 83, in get_uncompressed
+    uncompressed = gzip.decompress(
+  File "/usr/local/lib/python3.8/gzip.py", line 548, in decompress
+    return f.read()
+  File "/usr/local/lib/python3.8/gzip.py", line 292, in read
+    return self._buffer.read(size)
+  File "/usr/local/lib/python3.8/gzip.py", line 479, in read
+    if not self._read_gzip_header():
+  File "/usr/local/lib/python3.8/gzip.py", line 427, in _read_gzip_header
+    raise BadGzipFile('Not a gzipped file (%r)' % magic)
+gzip.BadGzipFile: Not a gzipped file (b'\xfdK')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1141, in slow_cwl_load
+    get_uncompressed(workflow, parse_as_yaml=True),
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/helpers.py", line 89, in get_uncompressed
+    uncompressed = zlib.decompress(
+zlib.error: Error -3 while decompressing data: incorrect header check
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/john.mcauliffe/documents/project1/dags/my_dag.py", line 3, in <module>
+    dag = CWLDAG(
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/extensions/cwldag.py", line 48, in __init__
+    self.workflow_tool = fast_cwl_load(         # keeps only the tool (CommentedMap object)
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1090, in fast_cwl_load
+    workflow_tool = slow_cwl_load(
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1147, in slow_cwl_load
+    workflow_data = __load(workflow)
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1129, in __load
+    return load_tool(
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 476, in load_tool
+    loadingContext, workflowobj, uri = fetch_document(argsworkflow, loadingContext)
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 125, in fetch_document
+    uri, fileuri = resolve_tool_uri(
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 98, in resolve_tool_uri
+    raise ValidationException("Not found: '%s'" % argsworkflow)
+schema_salad.exceptions.ValidationException: Not found: '/Users/john.mcauliffe/documents/dag-storage/scatter.cwl'
+[2023-08-07 02:48:33,469] {processor.py:625} WARNING - No viable dags retrieved from /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:48:33,502] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/my_dag.py took 1.210 seconds
+[2023-08-07 02:49:03,670] {processor.py:162} INFO - Started process (PID=1402) to work on /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:49:03,672] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/my_dag.py for tasks to queue
+[2023-08-07 02:49:03,673] {logging_mixin.py:109} INFO - [2023-08-07 02:49:03,673] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:49:04,814] {logging_mixin.py:109} INFO - [2023-08-07 02:49:04,805] {dagbag.py:329} ERROR - Failed to import: /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1085, in fast_cwl_load
+    with open(pickled_workflow, "rb") as input_stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/john.mcauliffe/documents/project1/cwl_pickle_folder/4ff24393afed2b9569298ab53ded8817.p'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/helpers.py", line 83, in get_uncompressed
+    uncompressed = gzip.decompress(
+  File "/usr/local/lib/python3.8/gzip.py", line 548, in decompress
+    return f.read()
+  File "/usr/local/lib/python3.8/gzip.py", line 292, in read
+    return self._buffer.read(size)
+  File "/usr/local/lib/python3.8/gzip.py", line 479, in read
+    if not self._read_gzip_header():
+  File "/usr/local/lib/python3.8/gzip.py", line 427, in _read_gzip_header
+    raise BadGzipFile('Not a gzipped file (%r)' % magic)
+gzip.BadGzipFile: Not a gzipped file (b'\xfdK')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1141, in slow_cwl_load
+    get_uncompressed(workflow, parse_as_yaml=True),
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/helpers.py", line 89, in get_uncompressed
+    uncompressed = zlib.decompress(
+zlib.error: Error -3 while decompressing data: incorrect header check
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/john.mcauliffe/documents/project1/dags/my_dag.py", line 3, in <module>
+    dag = CWLDAG(
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/extensions/cwldag.py", line 48, in __init__
+    self.workflow_tool = fast_cwl_load(         # keeps only the tool (CommentedMap object)
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1090, in fast_cwl_load
+    workflow_tool = slow_cwl_load(
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1147, in slow_cwl_load
+    workflow_data = __load(workflow)
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1129, in __load
+    return load_tool(
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 476, in load_tool
+    loadingContext, workflowobj, uri = fetch_document(argsworkflow, loadingContext)
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 125, in fetch_document
+    uri, fileuri = resolve_tool_uri(
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 98, in resolve_tool_uri
+    raise ValidationException("Not found: '%s'" % argsworkflow)
+schema_salad.exceptions.ValidationException: Not found: '/Users/john.mcauliffe/documents/dag-storage/scatter.cwl'
+[2023-08-07 02:49:04,826] {processor.py:625} WARNING - No viable dags retrieved from /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:49:04,900] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/my_dag.py took 1.234 seconds
+[2023-08-07 02:49:35,142] {processor.py:162} INFO - Started process (PID=1414) to work on /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:49:35,145] {processor.py:613} INFO - Processing file /Users/john.mcauliffe/documents/project1/dags/my_dag.py for tasks to queue
+[2023-08-07 02:49:35,147] {logging_mixin.py:109} INFO - [2023-08-07 02:49:35,147] {dagbag.py:496} INFO - Filling up the DagBag from /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:49:36,148] {logging_mixin.py:109} INFO - [2023-08-07 02:49:36,141] {dagbag.py:329} ERROR - Failed to import: /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1085, in fast_cwl_load
+    with open(pickled_workflow, "rb") as input_stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/john.mcauliffe/documents/project1/cwl_pickle_folder/4ff24393afed2b9569298ab53ded8817.p'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/helpers.py", line 83, in get_uncompressed
+    uncompressed = gzip.decompress(
+  File "/usr/local/lib/python3.8/gzip.py", line 548, in decompress
+    return f.read()
+  File "/usr/local/lib/python3.8/gzip.py", line 292, in read
+    return self._buffer.read(size)
+  File "/usr/local/lib/python3.8/gzip.py", line 479, in read
+    if not self._read_gzip_header():
+  File "/usr/local/lib/python3.8/gzip.py", line 427, in _read_gzip_header
+    raise BadGzipFile('Not a gzipped file (%r)' % magic)
+gzip.BadGzipFile: Not a gzipped file (b'\xfdK')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1141, in slow_cwl_load
+    get_uncompressed(workflow, parse_as_yaml=True),
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/helpers.py", line 89, in get_uncompressed
+    uncompressed = zlib.decompress(
+zlib.error: Error -3 while decompressing data: incorrect header check
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/john.mcauliffe/documents/project1/dags/my_dag.py", line 3, in <module>
+    dag = CWLDAG(
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/extensions/cwldag.py", line 48, in __init__
+    self.workflow_tool = fast_cwl_load(         # keeps only the tool (CommentedMap object)
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1090, in fast_cwl_load
+    workflow_tool = slow_cwl_load(
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1147, in slow_cwl_load
+    workflow_data = __load(workflow)
+  File "/usr/local/lib/python3.8/site-packages/cwl_airflow/utilities/cwl.py", line 1129, in __load
+    return load_tool(
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 476, in load_tool
+    loadingContext, workflowobj, uri = fetch_document(argsworkflow, loadingContext)
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 125, in fetch_document
+    uri, fileuri = resolve_tool_uri(
+  File "/usr/local/lib/python3.8/site-packages/cwltool/load_tool.py", line 98, in resolve_tool_uri
+    raise ValidationException("Not found: '%s'" % argsworkflow)
+schema_salad.exceptions.ValidationException: Not found: '/Users/john.mcauliffe/documents/dag-storage/scatter.cwl'
+[2023-08-07 02:49:36,155] {processor.py:625} WARNING - No viable dags retrieved from /Users/john.mcauliffe/documents/project1/dags/my_dag.py
+[2023-08-07 02:49:36,188] {processor.py:170} INFO - Processing /Users/john.mcauliffe/documents/project1/dags/my_dag.py took 1.050 seconds

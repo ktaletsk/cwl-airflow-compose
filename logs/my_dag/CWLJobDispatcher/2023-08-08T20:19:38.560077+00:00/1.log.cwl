@@ -1,0 +1,1 @@
+[2023-08-08 20:19:40,456] {load_tool.py:101} INFO - Resolved '/Users/john.mcauliffe/documents/project1/dag_storage/upperback.cwl' to 'file:///Users/john.mcauliffe/documents/project1/dag_storage/upperback.cwl'
