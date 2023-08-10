@@ -73,5 +73,13 @@ Passing configuration parameters at run time will ensure needed inputs are avail
 
 Inside this repository, some files are irrelevent (just reminence of my originial local file). "compressed_workflow.gz" and "compressed_workflow_base64.txt" are files that were used to PUSH a new CWL workflow to Airflow using the API.
 
-
-
+The API request looked something like this:
+***                      ***
+$ curl -X POST \
+  -H "Content-Type: application/json" \
+  -d '{
+    "workflow": "/Users/john.mcauliffe/documents/dag-storage/scatter.cwl",
+    "workflow_content": "/Users/John.mcauliffe/documents/project1/compressed_workflow_base64.txt"
+  }' \
+  "http://localhost:8081/api/experimental/dags?dag_id=my_new_dag"
+***                      ***
