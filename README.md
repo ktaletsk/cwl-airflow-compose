@@ -35,21 +35,39 @@ $ docker compose up --build
 
 *Compose will create all volumes at run time if they do not already exist
 
-## Running first CWL code
+## Running first CWL workflow
 
-You will need two three things to run your first CWL script (more inputs and complexity in workflow many add more documents necessary)...
+You will need three things to run your first CWL script (more inputs and complexity in workflow many add more documents necessary)...
 1. input/job
 2. cwl workflow file
 3. python-DAG file
 
+Inputs can be uploaded to the cwl_inputs_folder folder. The other four folders, inside your local directory, should "fill themselves" so to speak. (e.g. pickled workflows, or compressed data to represent your workflow, will be created and stored in cwl_pickle_folder when the CWLJobDispatcher runs successfully.)
+
+Inside of the "dags" folder, make sure a DAG python file exists which points to your CWL script. It might look like this...
+
+***                      ***
+#!/usr/bin/env python3
+from cwl_airflow.extensions.cwldag import CWLDAG
+dag = CWLDAG(
+    workflow="/absolute/path/to/workflow.cwl",
+    dag_id="my_dag_name"
+)
+***                      ***
+
+
 Once uploaded successfully...
 When triggering your DAG, use a .json job file to specify inputs. Select "trigger w/ configuration" inside of the Airflow UI. Also look to the CWL-Airflow "how-to-use.md" to learn about API usage. CWL-Airflow supplies its own API to execute DAGs with PUSH and accompanying job configuration.
 
-For example, upperback is a simple workflow that takes a message, changes it to uppercase, reverses the text, and outputs the result (using inLineJaveRequrement, CommandLineTool, and ExpressionTool). It needs an input, specified upon running, like this:
-
-
-
-
+For example, upperback is a simple workflow that takes a message, changes it to uppercase, reverses the text, and outputs the result (using inLineJaveRequrement, CommandLineTool, and ExpressionTool). It needs an input, specified upon triggering, like this:
+***                      ***
+{
+"job": {
+"message": "whats up",
+"scale": 1}
+}
+***                      ***
+Passing configuration parameters at run time will ensure needed inputs are available. Review your workflow's code and make sure everyconfiguration parameter is accounted for. 
 
 ## Features and Bugs
 
