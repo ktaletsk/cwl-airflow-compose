@@ -6,10 +6,11 @@ from cwl_airflow.utilities.cwl import clean_up_dag_run
 from cwl_airflow.utilities.report import dag_on_success, dag_on_failure
 
 
+# This python file will load automatically when first running "docker-compose up" command.
+# Here, I have modified the DAG to simple output DAG context (hopefully to comunicate necessary DAG_run variables)
+
 def clean_dag_run(**context):
-    clean_up_dag_run(
-        dag_id=context["dag_run"].conf["remove_dag_id"],
-        run_id=context["dag_run"].conf["remove_run_id"]
+    print(context)
     )
 
 
