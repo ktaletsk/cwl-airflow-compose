@@ -6,6 +6,7 @@ Use this Docker Compose file to run Airflow 2.1.4 with CWL-Airflow 1.2.0 install
 - [Configuration and Installation](#configuration-and-installation)
 - [Running first CWL code](#running-first-cwl-code)
 - [Features and Bugs](#features-and-bugs)
+- [Tips and Tricks](#tips-and-tricks)
 
 ## Configuration and Installation
 
