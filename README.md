@@ -71,3 +71,7 @@ Passing configuration parameters at run time will ensure needed inputs are avail
 
 ## Features and Bugs
 
+Inside this repository, some files are irrelevent (just reminence of my originial local file). "compressed_workflow.gz" and "compressed_workflow_base64.txt" are files that were used to PUSH a new CWL workflow to Airflow using the API.
+
+
+
