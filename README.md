@@ -83,3 +83,11 @@ $ curl -X POST \
   }' \
   "http://localhost:8081/api/experimental/dags?dag_id=my_new_dag"
 ***                      ***
+
+Common errors:
++ schema_salad.exceptions.ValidationException: Not found: '/Users/john.mcauliffe/documents/dag-storage/new.cwl'
+++ fix: make sure your /path/to/dag is inside the same project folder like it is here.
+
+
+
+
