@@ -88,7 +88,9 @@ Common errors:
 + schema_salad.exceptions.ValidationException: Not found: '/Users/john.mcauliffe/documents/dag-storage/new.cwl'
 + + fix: make sure your /path/to/dag is inside the same project folder like it is here.
 + FileNotFoundError: [Errno 2] No such file or directory: '/Users/john.mcauliffe/documents/project1/cwl_pickle_folder/3c18fa08f8beabcef4278a5f54503482.p'
-+ + fix: this error is similar to the above mention. Make sure all PATHs are correct and local file organization is correct for all documents including your "dag.py"
++ + fix: this error is similar to the above mention; make sure all PATHs are correct and local file organization is correct for all documents including your "dag.py"
++ recursion reached maximum depth error
++ + fix: try debugging your python operator; the problem is likely with incorrect syntax or Python Libraries failing to import the correct versions of packages
 
 
 
