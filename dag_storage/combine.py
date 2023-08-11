@@ -14,13 +14,13 @@ default_args = {
 dag = DAG(
     'my_trigger_dag',
     default_args=default_args,
-    schedule_interval=None,  # Set your desired schedule interval
+    schedule_interval=None,  # desired schedule interval
     catchup=False,
 )
 
 trigger_task = TriggerDagRunOperator(
     task_id='trigger_task',
-    trigger_dag_id="my_dag",  # Replace with the ID of the target DAG
+    trigger_dag_id="my_dag",  # target DAG
     provide_context=True,
     conf={
         "job": {
