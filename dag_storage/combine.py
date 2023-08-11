@@ -31,9 +31,10 @@ trigger_task = TriggerDagRunOperator(
 )
 
 def my_python_function(**kwargs):
-    # Your Python task logic here
+    # Optional Python logic here
     print("Executing the new_task...")
 
+# This is a dummy task using a PythonOperator
 new_task = PythonOperator(
     task_id='new_task',
     python_callable=my_python_function,
