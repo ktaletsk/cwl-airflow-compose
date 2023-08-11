@@ -104,6 +104,8 @@ Common errors:
 
 + Another useful tool inside Airflow: Sensor Operators. These Operators can be used to monitor the behavior of other tasks and DAG; they can execute functions only when certain criteria are met (e.g. the successful completetion of another task)
 + + Check out the [ExternalTaskSensor](https://github.com/apache/airflow/blob/39aee60b33a56eee706af084ed1c600b12a0dd57/airflow/sensors/external_task.py) Operator that I use in [sensor_example.py](/dag_storage/sensor_example.py)
+  + In this example, the sensors are referencing tasks from an external DAG, hence the operator name, however the same operator, and other sensor operators, can be used more simply inside the DAG their monitoring
+  + They can be used to check task status, outputs, inputs, and configuration
 
 
 
