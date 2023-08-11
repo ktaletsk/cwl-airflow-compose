@@ -73,7 +73,7 @@ Passing configuration parameters at run time will ensure needed inputs are avail
 ## Features and Bugs
 
 + [jobs](/jobs) folder is personal storage; it is not necessary to save in this location
-+ [dag_storage](/dag_storage) similarly is also a place to store and edit potential CWL code--however, dags inside of the [dags](/dags) folder may point to CWL script store in this specific location
++ Similarly, [dag_storage](/dag_storage) is a place to store and edit potential CWL code--however, dags inside of the [dags](/dags) folder may point to CWL script stored in this specific location
 
 Inside this repository, some files are irrelevent (just reminence of my originial local file). "compressed_workflow.gz" and "compressed_workflow_base64.txt" are files that were used to PUSH a new CWL workflow to Airflow using the API.
 
