@@ -35,7 +35,9 @@ You will need three things to run your first CWL script
     
 ***                      ***
 #!/usr/bin/env python3
+
 from cwl_airflow.extensions.cwldag import CWLDAG
+
 dag = CWLDAG(
     workflow="/absolute/path/to/workflow.cwl",
     dag_id="my_dag_name"
