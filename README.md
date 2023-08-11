@@ -10,19 +10,12 @@ Use this Docker Compose file to run Airflow 2.1.4 with CWL-Airflow 1.2.0 install
 
 ## Configuration and Installation
 
-First, make sure that each containers can access persistant data via volumes. These specify locations in your local filesystem, managed by Docker.
-+ Navigate to the .env to specify the location of your storage folders
-
-Note: Other changes can be made inside of the Dockerfile in the cwl_airflow folder (for instance, author names and description etc.)
-
-*** MAY NOT BE NECESSARY ***
+    + First, make sure that each containers can access persistant data via volumes. These specify locations in your local filesystem, managed by Docker.
+        + Navigate to the .env to specify the location of your storage folders
 
 
-If problems arise with missing folder errors, try the following...
-
-
-Make sure that the folder locations are specefied inside airflow.cfg.
-+ Navigate to airflow.cfg and include/update the parameters, at the bottom of the document, which specify the folder locations. After updating the file, copy the file back into the webserver container where it is used to initialize airflow and its many parameters.
+        
+    + If encountering problems with folder location, make sure that the folder locations are specefied inside airflow.cfg. Navigate to airflow.cfg and include/update the parameters, at the bottom of the document, which specify the folder locations. After updating the file, copy the file back into the webserver container where it is used to initialize airflow and its many parameters.
 
 
 Use the command
@@ -69,9 +62,9 @@ dag = CWLDAG(
 ## Features and Bugs
 
 + [jobs](/jobs) folder is personal storage; it is not necessary to save in this location
-+ Similarly, [dag_storage](/dag_storage) is a place to store and edit potential CWL code--however, dags inside of the [dags](/dags) folder may point to CWL script stored in this specific location
++ Similarly, [dag_storage](/dag_storage) is a place to store and edit potential CWL code--however, DAGs inside of the [dags](/dags) folder may point to CWL script stored in this specific location
 
-Inside this repository, some files are irrelevent (just reminence of my originial local file). "compressed_workflow.gz" and "compressed_workflow_base64.txt" are files that were used to PUSH a new CWL workflow to Airflow using the API.
++ Inside this repository, some files are irrelevent (just reminence of my originial local file). "compressed_workflow.gz" and "compressed_workflow_base64.txt" are files that were used to PUSH a new CWL workflow to Airflow using the API.
 
 The API request looked something like this:
 ***                      ***
@@ -98,7 +91,7 @@ Common errors:
 + Try using the [TriggerDagRunOperator](https://github.com/apache/airflow/blob/main/airflow/operators/trigger_dagrun.py) to compile multiple DAGs into one DAG
     + See combine.py for an example of this operator in use
 
-+ Another useful tool inside Airflow: Sensor Operators. These Operators can be used to monitor the behavior of other tasks and DAG; they can execute functions only when certain criteria are met (e.g. the successful completetion of another task)
++ Another useful tool inside Airflow: Sensor Operators. These Operators can be used to monitor the behavior of other tasks and DAGs; they can execute functions only when certain criteria are met (e.g. the successful completetion of another task)
     + Check out the [ExternalTaskSensor](https://github.com/apache/airflow/blob/39aee60b33a56eee706af084ed1c600b12a0dd57/airflow/sensors/external_task.py) Operator that I use in [sensor_example.py](/dag_storage/sensor_example.py)
     + In this example, the sensors are referencing tasks from an external DAG, hence the operator name, however the same operator, and other sensor operators, can be used more simply inside the DAG their monitoring
     + They can be used to check task status, outputs, inputs, and configuration
