@@ -19,10 +19,11 @@ Use this Docker Compose file to run Airflow 2.1.4 with CWL-Airflow 1.2.0 install
 
 
 Use the command
-***                      ***
-$ docker compose up --build
-***                      ***
-
+<pre>
+```bash
+    $ docker compose up --build
+```
+</pre>
 
 Note: Compose will create all volumes at run time if they do not already exist. Additionally MySQL database and storage will also be created automatically upon building.
 
