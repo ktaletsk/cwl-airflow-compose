@@ -99,7 +99,7 @@ Common errors:
 
 ## More Complex/Tips and Tricks
 
-+ Try using the [TriggerDagRunOperator](https://github.com/apache/airflow/blob/main/airflow/operators/trigger_dagrun.py) to compile multiple DAGs into one DAG
++ Try using the [TriggerDagRunOperator](https://github.com/apache/airflow/blob/main/airflow/operators/trigger_dagrun.py){:target="_blank"} to compile multiple DAGs into one DAG
 + + See combine.py for an example of this operator in use
 
 
