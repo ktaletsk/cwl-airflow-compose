@@ -90,13 +90,13 @@ Common errors:
 
 ## More Complex and Tips
 
-+ Try using the [TriggerDagRunOperator](https://github.com/apache/airflow/blob/main/airflow/operators/trigger_dagrun.py) to compile multiple DAGs into one DAG
++ Try using the [TriggerDagRunOperator](https://github.com/apache/airflow/blob/main/airflow/operators/trigger_dagrun.py) to compile multiple DAGs into one
     + See combine.py for an example of this operator in use
 
-+ Another useful tool inside Airflow: Sensor Operators. These Operators can be used to monitor the behavior of other tasks and DAGs; they can execute functions only when certain criteria are met (e.g. the successful completetion of another task)
++ Another useful tool inside Airflow: Sensor Operators. These Operators can be used to monitor the behavior of other tasks and DAGs. They can execute functions when certain criteria are met (e.g. the successful completetion of a seperate task)
     + Check out the [ExternalTaskSensor](https://github.com/apache/airflow/blob/39aee60b33a56eee706af084ed1c600b12a0dd57/airflow/sensors/external_task.py) Operator that I use in [sensor_example.py](/dag_storage/sensor_example.py)
-    + In this example, the sensors are referencing tasks from an external DAG, hence the operator name, however the same operator, and other sensor operators, can be used more simply inside the DAG their monitoring
-    + They can be used to check task status, outputs, inputs, and configuration
+    + In this example, the sensors are referencing tasks from an external DAG, hence the operator name, however the same operator, and other sensor operators, can be used more simply (inside the DAG their monitoring instead of pointing outside of the file).
+    + Sensor Operators can be used to check task status, outputs, inputs, and configuration
 
 
 
