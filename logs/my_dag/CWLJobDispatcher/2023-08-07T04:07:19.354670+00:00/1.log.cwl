@@ -1,1 +1,0 @@
-[2023-08-07 04:07:21,203] {load_tool.py:101} INFO - Resolved '/Users/john.mcauliffe/documents/project1/dag_storage/new_dag.cwl' to 'file:///Users/john.mcauliffe/documents/project1/dag_storage/new_dag.cwl'
