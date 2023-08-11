@@ -10,8 +10,8 @@ Use this Docker Compose file to run Airflow 2.1.4 with CWL-Airflow 1.2.0 install
 
 ## Configuration and Installation
 
-    + First, make sure that each containers can access persistant data via volumes. These specify locations in your local filesystem, managed by Docker.
-        + Navigate to the .env to specify the location of your storage folders
++ First, make sure that each containers can access persistant data via volumes. These specify locations in your local filesystem, managed by Docker.
+    + Navigate to the .env to specify the location of your storage folders
 
 
         
