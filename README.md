@@ -102,5 +102,10 @@ Common errors:
 + Try using the [TriggerDagRunOperator](https://github.com/apache/airflow/blob/main/airflow/operators/trigger_dagrun.py) to compile multiple DAGs into one DAG
 + + See combine.py for an example of this operator in use
 
++ Another useful tool inside Airflow: Sensor Operators. These Operators can be used to monitor the behavior of other tasks and DAG; they can execute functions only when certain criteria are met (e.g. the successful completetion of another task)
++ + Check out the [ExternalTaskSensor](https://github.com/apache/airflow/blob/39aee60b33a56eee706af084ed1c600b12a0dd57/airflow/sensors/external_task.py) Operator that I use in [sensor_example.py](/dag_storage/sensor_example.py)
+
+
+
 
 
