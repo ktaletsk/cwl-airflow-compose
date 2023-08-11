@@ -3,7 +3,7 @@
 # The DAG looks like this: CWLJobDispatcher, echo, uppercase, CWLJobGatherer
 
 # so, sense when the first task returns success status, then when the last task does
-# at each instance , print "successful start" and "successfully end" respectively
+# at each instance , (I can also print "successful start" and "successfully end" respectively using BashOperators)
 
 # dag_id = my_dag
 # task1 = CWLJobDispatcher
