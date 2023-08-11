@@ -37,7 +37,7 @@ Note: Compose will create all volumes at run time if they do not already exist. 
 
 You will need three things to run your first CWL script
 
-1. upload your CWL file
+1. upload your CWL file to your home directory
 2. make a python file inside [dags](/dags) folder that uses CWLDAG library (example below)
     
 ***                      ***
