@@ -39,19 +39,7 @@ You will need three things to run your first CWL script
 
 1. upload your CWL file
 2. make a python file inside [dags](/dags) folder that uses CWLDAG library (example below)
-3. upon runtime, indclude any necessary configuration parameters like "job" in a .json file
-    + When triggering your DAG, use a .json job file to specify inputs. Select "trigger w/ configuration" inside of the Airflow UI. Also look to the CWL-Airflow "how-to-use.md" to learn about API usage. CWL-Airflow supplies its own API to execute DAGs with PUSH and accompanying job configuration.
-
-    For example, upperback.cwl is a simple workflow that takes a message, changes it to uppercase, reverses the text, and outputs the result (using inLineJaveRequrement, CommandLineTool, and ExpressionTool). It needs an input, specified upon triggering, like this:
-***                      ***
-{
-"job": {
-"message": "whats up",
-"scale": 1}
-}
-***                      ***
-    Passing configuration parameters at run time will ensure needed inputs are available. Review your workflow's code and make sure everyconfiguration parameter is accounted for. 
-
+    
 ***                      ***
 #!/usr/bin/env python3
 from cwl_airflow.extensions.cwldag import CWLDAG
@@ -60,6 +48,20 @@ dag = CWLDAG(
     dag_id="my_dag_name"
 )
 ***                      ***
+
+3. upon runtime, indclude any necessary configuration parameters like "job" in a .json file
+    + When triggering your DAG, use a .json job file to specify inputs. Select "trigger w/ configuration" inside of the Airflow UI. Also look to the CWL-Airflow "how-to-use.md" to learn about API usage. CWL-Airflow supplies its own API to execute DAGs with PUSH and accompanying job configuration.
+
+        For example, upperback.cwl is a simple workflow that takes a message, changes it to uppercase, reverses the text, and outputs the result (using inLineJaveRequrement, CommandLineTool, and ExpressionTool). It needs an input, specified upon triggering, like this:
+***                      ***
+{
+"job": {
+"message": "whats up",
+"scale": 1}
+}
+***                      ***
+
+
 
 
 
