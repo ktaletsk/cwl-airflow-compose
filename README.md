@@ -6,7 +6,7 @@ Use this Docker Compose file to run Airflow 2.1.4 with CWL-Airflow 1.2.0 install
 - [Configuration and Installation](#configuration-and-installation)
 - [Running first CWL workflow](#running-first-cwl-workflow)
 - [Features and Bugs](#features-and-bugs)
-- [More Complex/Tips and Tricks](#More-Complex-Tips-and-Tricks)
+- [More Complex and Tips](#More-Complex-and-Tips)
 
 ## Configuration and Installation
 
@@ -97,7 +97,7 @@ Common errors:
     + fix: try debugging your python operator; the problem is likely with incorrect syntax inside a _python_ file
 
 
-## More Complex/Tips and Tricks
+## More Complex and Tips
 
 + Try using the [TriggerDagRunOperator](https://github.com/apache/airflow/blob/main/airflow/operators/trigger_dagrun.py) to compile multiple DAGs into one DAG
     + See combine.py for an example of this operator in use
