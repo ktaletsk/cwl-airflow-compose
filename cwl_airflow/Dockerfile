@@ -30,7 +30,7 @@ WORKDIR /tmp
 ARG PYTHON_VERSION
 ARG CWL_AIRFLOW_VERSION
 
-ENV CWL_AIRFLOW_URL "https://github.com/jrmcauliffe00/cwl-airflow"
+ENV CWL_AIRFLOW_URL "https://github.com/Barski-lab/cwl-airflow"
 ENV PYTHON_URL "https://www.python.org/ftp/python/${PYTHON_VERSION}/Python-${PYTHON_VERSION}.tgz"
 
 COPY ./scripts/start_webserver.sh /usr/local/bin/start_webserver.sh
