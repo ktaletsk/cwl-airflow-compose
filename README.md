@@ -19,11 +19,9 @@ Use this Docker Compose file to run Airflow 2.1.4 with CWL-Airflow 1.2.0 install
 
 
 Use the command
-<pre>
 ```bash
-    $ docker compose up --build
+docker compose up --build
 ```
-</pre>
 
 Note: Compose will create all volumes at run time if they do not already exist. Additionally MySQL database and storage will also be created automatically upon building.
 
@@ -34,19 +32,17 @@ You will need three things to run your first CWL script
 1. upload your CWL file to your home directory
 2. make a python file inside [dags](/dags) folder that uses CWLDAG library (example below)
     
-<pre>
 ```python
 #!/usr/bin/env python3
 from cwl_airflow.extensions.cwldag import CWLDAG
 dag = CWLDAG(workflow="/absolute/path/to/workflow.cwl", dag_id="my_dag_name")
 ```
-</pre>
 
 3. upon runtime, indclude any necessary configuration parameters like "job" in a .json file
     + When triggering your DAG, use a .json job file to specify inputs. Select "trigger w/ configuration" inside of the Airflow UI. Also look to the CWL-Airflow "how-to-use.md" to learn about API usage. CWL-Airflow supplies its own API to execute DAGs with PUSH and accompanying job configuration.
 
         For example, upperback.cwl is a simple workflow that takes a message, changes it to uppercase, reverses the text, and outputs the result (using inLineJaveRequrement, CommandLineTool, and ExpressionTool). It needs an input, specified upon triggering, like this:
-<pre>
+
 ```json
 {
   "job": {
@@ -55,7 +51,6 @@ dag = CWLDAG(workflow="/absolute/path/to/workflow.cwl", dag_id="my_dag_name")
   }
 }
 ```
-</pre>
 
 
 ## Features and Bugs
@@ -66,7 +61,6 @@ dag = CWLDAG(workflow="/absolute/path/to/workflow.cwl", dag_id="my_dag_name")
 + Inside this repository, some files are irrelevent (just reminence of my originial local file). "compressed_workflow.gz" and "compressed_workflow_base64.txt" are files that were used to PUSH a new CWL workflow to Airflow using the API.
 
 The API request looked something like this:
-<pre>
 ```bash
 $ curl -X POST \
   -H "Content-Type: application/json" \
@@ -76,7 +70,6 @@ $ curl -X POST \
   }' \
   "http://localhost:8081/api/experimental/dags?dag_id=my_new_dag"
 ```
-</pre>
 
 Common errors:
 + schema_salad.exceptions.ValidationException: Not found: '/Users/john.mcauliffe/documents/dag-storage/new.cwl'
